@@ -3,9 +3,9 @@ received_txn = A transfers $100.00 USD to B.0 received at rank 2
 Rank 2 receives request: prepare
 received_txn = A transfers $100.00 USD to B.1 received at rank 2 
 Rank 2 receives request: prepare
-received_txn = A transfers $100.00 USD to B.2 received at rank 2 
+received_txn = A transfers $100.00 USD to B.2 received at rank 2  
 Rank 2 receives request: prepare
-received_txn = A transfers $100.00 USD to B.3 received at rank 2 
+received_txn = A transfers $100.00 USD to B.3 received at rank 2  
 Rank 2 receives request: prepare
 received_txn = A transfers $100.00 USD to B.0 received at rank 3 
 Rank 3 receives request: prepare
