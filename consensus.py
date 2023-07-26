@@ -5,6 +5,7 @@ Usage:          mpiexec -n <thread #> python -O mpi_blockchain.py
 Input:          None
 Output:         <thread #> of files with commited transactions in ./output/
 Start Date:     02/05/2022
+Update: 04/17/2023
 Desc:           A quick prototype of blockchain using MPI
 Change History:    
                 
