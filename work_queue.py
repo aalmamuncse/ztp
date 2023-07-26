@@ -1,4 +1,4 @@
-
+#Group manager of a blockchain sub-cluster
 __all__=['WorkQueue']
  
 import logging
