@@ -1,3 +1,4 @@
+#parallel management of blockchain nodes workgroups
 from mpi_master_slave import WorkQueue 
 
 __all__=['MultiWorkQueue']
