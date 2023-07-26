@@ -33,7 +33,7 @@ Please set all properties mentioned in the script.sh following the documentation
  * output: contains the execution/debugging output (if any).
 
 ### Quick Execution 
-sbatch script.sh
+sbatch <script>.sh
 
 ## ZTP documentation
 We have provided detailed inline comments for all the non-trivial code blocks in the code.
