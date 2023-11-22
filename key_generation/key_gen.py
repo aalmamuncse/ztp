@@ -1,21 +1,35 @@
 from mpi4py import MPI
 import random
 import string
+from Crypto.Cipher import AES
+import base64, os
+import time
 
+def current_time_ms():
+    return time.time() * 1000
+
+    
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
 
 # Function to generate key
 def generate_key():
-    def generate_key():
-    # Generate a random key of length 16 composed of alphanumeric characters
-    key_length = 16
-    key = ''.join(random.choices(string.ascii_letters + string.digits, k=key_length))
+   # AES key length must be either 16, 24, or 32 bytes long
+    AES_key_length = 16 # use larger value in production
+    # generate a random secret key with the decided key length
+    # this secret key will be used to create AES cipher for encryption/decryption
+    secret_key = os.urandom(AES_key_length)
+    # encode this secret key for storing safely in database
+    encoded_secret_key = base64.b64encode(secret_key)
+    return encoded_secret_key
+    # # Generate a random key of length 16 composed of alphanumeric characters
+    # key_length = 16
+    # key = ''.join(random.choices(string.ascii_letters + string.digits, k=key_length))
     
-    if rank == 0:
-        return key  # Generating the key only in the root process (rank 0)
-    else:
-        return None
+    # if rank == 0:
+    #     return key  # Generating the key only in the root process (rank 0)
+    # else:
+    #     return None
 
 # Function to divide key into geometric segments (rectangle)
 def divide_key_into_segments(key):
