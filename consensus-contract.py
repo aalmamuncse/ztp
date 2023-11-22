@@ -9,7 +9,6 @@ Update: 04/27/2023
 Desc:           A quick prototype of blockchain using MPI
 Change History:    
                 
-Idea: once the hpc cluster receives the data request, the receiver node will broadcast the request to the fellow nodes (no cluster concept like BAASH), the secret holders nodes will forward the secrets along with their votes, the receiver compute node does not need to know who are the fellow nodes that hold the secrets.
 
 
 """
