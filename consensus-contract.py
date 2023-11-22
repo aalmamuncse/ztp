@@ -1,10 +1,14 @@
 #!/usr/bin/env python
 
 
-
+import sys
 from mpi4py import MPI
 import sys, datetime, os, contract
 sys.path.append('/key-generation')
+sys.path.append('/key-send')
+
+from contract import generate_AES_key, divide_key_into_segments, create_fragment_identifiers, distribute_key_fragments
+
 
 ### 2PQC: 2-Phase Quorum Commit Protocol: A MPI-based 2-phase commit protocol with quorum check
 ### The idea is simple: why can't we plug in the quorum check into the 2PC protocol in HPC blockchain?
