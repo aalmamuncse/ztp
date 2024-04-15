@@ -4,8 +4,6 @@ ZTP is an early prototype, designed with a lightweight decentralized parallel pr
 ## ZTP Workflow
 <img src="https://user-images.githubusercontent.com/44820439/211341566-3651a90b-5d5a-4c6f-84f4-c9c3085c853b.png" width="600" height="400">
 
-## ZTP Parallel Key Accumalator
-<img src="https://user-images.githubusercontent.com/44820439/211342146-aa72d2f9-a149-41a7-9ea0-cb24403612b9.jpg" width="600" height="400">
 
 ## Quick facts on ZTP version 1.0.0
 * ZTP is designed specifically for providing privacy support to blockchain architecture to provide distributed trustworthy resilience support.
