@@ -5,7 +5,7 @@ from mpi4py import MPI
 
 class contract:
     """
-    Handle a work queue on a contract for approved seekers
+    Handle a work queue that assists owner on a contract for approved seekers
     """
    
     def __init__(self, master):
