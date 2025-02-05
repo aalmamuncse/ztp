@@ -1,19 +1,3 @@
-#!/usr/bin/env python
-"""
-Author:         
-Usage:          mpiexec -n <thread #> python -O mpi_blockchain.py
-Input:          None
-Output:         <thread #> of files with commited transactions in ./output/
-Start Date:     02/05/2022
-Update: 04/17/2023
-Desc:           A quick prototype of blockchain using MPI
-Change History:    
-                
-Idea: once the hpc cluster receives the data request, the receiver node will broadcast the request to the fellow nodes (no cluster concept like BAASH), the secret holders nodes will forward the secrets along with their votes, the receiver compute node does not need to know who are the fellow nodes that hold the secrets.
-
-
-"""
-
 
 from mpi4py import MPI
 import sys, datetime, os
