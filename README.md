@@ -2,7 +2,7 @@
 ZTP is an early prototype, designed with a lightweight decentralized parallel processing protocol fully compatible with MPI and the distributed-storage architecture to provide blockchain-like distributed resilience support while avoiding the conventional TCP/IP stack through the support of MPI for the heavy-workload applications..
 
 ## ZTP Workflow
-<img src="https://github.com/aalmamuncse/ztp/blob/main/ztp-wf.png" width="600" height="400">
+<img src="https://github.com/aalmamuncse/ztp/blob/main/ztp-wf.png" width="800" height="400">
 
 
 ## Quick facts on ZTP version 1.0.0
