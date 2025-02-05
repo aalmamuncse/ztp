@@ -17,7 +17,8 @@ ZTP is an early prototype, designed with a lightweight decentralized parallel pr
 
 
 ## System requirements
-Python 3.7.0, NumPy 1.15.4, mpi4py v2.0.0, and mpich2 v1.4.1
+Python 3.7.0, NumPy 1.15.4, mpi4py v2.0.0, and mpich2 v1.4.1, pycryptodome
+
 
 ## ZTP execution
 The ZTP has been developed with Python. The ZTP is executed with Slurm workload manager. Please see the slurm documentation (https://slurm.schedmd.com/documentation.html) for more details for all the parameters. If you prefer other workload manager, please follow the documentation to set up the parameters before executing the BAASH service.
