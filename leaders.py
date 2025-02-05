@@ -1,3 +1,4 @@
+#initial protocol
 from mpi4py import MPI
 import networkx as nx
 from key_generation import key_gen
