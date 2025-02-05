@@ -1,27 +1,11 @@
-#!/usr/bin/env python
-"""
-Author:         
-Usage:          mpiexec -n <thread #> python -O mpi_blockchain.py
-Input:          None
-Output:         <thread #> of files with commited transactions in ./output/
-Start Date:     02/05/2022
-Desc:           A quick prototype of blockchain using MPI
-Change History:    
-                02/09/2022: Reorg the output directory.
-                02/08/2022: 2PQC is implemented.
-                02/06/2022: came up with the idea of 2PQC.
-"""
+
 
 
 from mpi4py import MPI
 import sys, datetime, os
 
 
-### 2PQC: 2-Phase Quorum Commit Protocol: A MPI-based 2-phase commit protocol with quorum check
-### The idea is simple: why can't we plug in the quorum check into the 2PC protocol in HPC blockchain?
-### If we really think about 2PC and consensus, 2PC is nothing but checking all participants are ready/done for commit
-### On the other hand, consensus requires us to reach 51% decision. That's it.
-### In HPC, we don't care about Bazyntine failures; there's only fail-restart scenario.
+
 def dc_2pqc(received_txn, output_path):
     """A distributed commit protocol named two-phase quorum commit.
 
